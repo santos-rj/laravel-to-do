@@ -18,6 +18,7 @@ class CreateTasksTable extends Migration
             $table->string('name', 255);
             $table->boolean('complete');
             $table->timestampsTz(0);
+            $table->engine = 'InnoDB';
         });
     }
 
